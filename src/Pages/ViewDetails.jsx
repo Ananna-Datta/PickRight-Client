@@ -20,7 +20,7 @@ const ViewDetails = () => {
       );
       setEquipment(data);
     } catch (error) {
-      console.error("Error fetching equipment details:", error);
+      // console.error("Error fetching equipment details:", error);
       toast.error("Failed to load equipment details.");
     } finally {
       setLoading(false);
@@ -35,7 +35,7 @@ const ViewDetails = () => {
       setRecommendations(data);
       setLoading(false);
     } catch (error) {
-      console.error("Error fetching recommendations:", error);
+      // console.error("Error fetching recommendations:", error);
       // toast.error("Failed to load recommendations.");
     }
   };
@@ -82,7 +82,7 @@ const ViewDetails = () => {
       toast.success("Recommendation Added successfully");
       form.reset();
     } catch (err) {
-      console.error("Error submitting query:", err);
+      // console.error("Error submitting query:", err);
       toast.error(err.message);
     }
   };

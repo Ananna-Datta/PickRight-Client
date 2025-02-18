@@ -34,7 +34,8 @@ const EquipCard = ({ equipment }) => {
                 className="mt-4 w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-blue-700"
             >
                 Recommend
-            </motion.button></Link>
+            </motion.button>
+            </Link>
         </motion.div>
     );
 };

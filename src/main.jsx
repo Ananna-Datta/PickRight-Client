@@ -64,7 +64,7 @@ const router = createBrowserRouter([
             <ViewDetails></ViewDetails>
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5173/equipment/${params.id}`),
+        loader: ({ params }) => fetch(`https://pick-right-server.vercel.app/equipment/${params.id}`),
       },
       {
         path: 'edit_equipment/:id',
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
             <EditEquipment></EditEquipment>
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5173/equipment/${params.id}`),
+        loader: ({ params }) => fetch(`https://pick-right-server.vercel.app/equipment/${params.id}`),
       },
       {
         path: 'myRecommendations',

@@ -44,10 +44,8 @@ const AddQuery = () => {
       );
       toast.success("Data Added successfully");
       form.reset();
-      console.log(response.data);
       navigate('/myEquip'); // Use navigate to redirect
     } catch (err) {
-      console.log("Error submitting query:", err);
       toast.error(err.message);
     }
   };

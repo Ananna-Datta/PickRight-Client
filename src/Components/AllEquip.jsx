@@ -5,7 +5,7 @@ import EquipCard from './EquipCard';
 const AllEquip = () => {
     const [equip, setEquip] = useState([]);
     const [searchText, setSearchText] = useState("");
-    const [gridCols, setGridCols] = useState(3); // Default 3-column layout
+    const [gridCols, setGridCols] = useState(3); 
 
     useEffect(() => {
         fetchAllJobs();

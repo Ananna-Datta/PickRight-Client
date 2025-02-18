@@ -21,7 +21,7 @@ const Login = () => {
       .then((result) => {
         toast.success("Google Sign-In successful!");
         // alert("Google Sign-In successful!");
-        console.log(result);
+        // console.log(result);
         Swal.fire({
             title: 'Success!',
             text: 'Login successfully',

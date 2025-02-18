@@ -26,7 +26,7 @@ import { auth } from "../Firebase/Firebase.config";
           setLoading(false);
         },
         (error) => {
-          console.error("Error tracking auth state:", error);
+          // console.error("Error tracking auth state:", error);
           setLoading(false);
         }
       );
@@ -41,7 +41,7 @@ import { auth } from "../Firebase/Firebase.config";
       setLoading(true);
       return createUserWithEmailAndPassword(auth, email, password)
         .catch((error) => {
-          console.error("Error creating user:", error.message);
+          // console.error("Error creating user:", error.message);
           throw error;
         })
         .finally(() => setLoading(false));
@@ -52,7 +52,7 @@ import { auth } from "../Firebase/Firebase.config";
       setLoading(true);
       return signInWithEmailAndPassword(auth, email, password)
         .catch((error) => {
-          console.error("Error logging in:", error.message);
+          // console.error("Error logging in:", error.message);
           throw error;
         })
         .finally(() => setLoading(false));
@@ -83,7 +83,7 @@ import { auth } from "../Firebase/Firebase.config";
           }
         });
       } catch (error) {
-        console.error("Error logging out:", error.message); // Log error for debugging
+        // console.error("Error logging out:", error.message); // Log error for debugging
         toast.error("Failed to log out. Please try again."); // Show error message
         Swal.fire({
           title: 'Success!',

@@ -9,7 +9,7 @@ const Recommendations = ({ email }) => {
     // Fetch recommendations from backend
     const fetchRecommendations = async () => {
       try {
-        const response = await fetch('http://localhost:5000/recommendation');
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/recommendation`);
         if (!response.ok) {
           throw new Error('Failed to fetch recommendations');
         }

@@ -26,7 +26,7 @@ const MyRecommendations = () => {
       const sortedData = data.sort((a, b) => new Date(b.formattedDate) - new Date(a.formattedDate));
       setEquip(sortedData);
     } catch (error) {
-      console.error("Error fetching equipment:", error);
+      // console.error("Error fetching equipment:", error);
       toast.error("Failed to load equipment.");
     } finally {
       setLoading(false);
@@ -55,7 +55,7 @@ const MyRecommendations = () => {
           icon: "success",
         });
       } catch (error) {
-        console.error("Error deleting query:", error);
+        // console.error("Error deleting query:", error);
         toast.error("Failed to delete query.");
       }
     }

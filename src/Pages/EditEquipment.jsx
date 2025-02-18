@@ -19,7 +19,7 @@ const EditEquipment = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching equipment:", err);
+        // console.error("Error fetching equipment:", err);
         toast.error("Failed to load equipment data");
         setLoading(false);
       });
@@ -44,7 +44,7 @@ const EditEquipment = () => {
       toast.success("Equipment updated successfully");
       navigate('/myEquip'); // Redirect to myEquip page
     } catch (err) {
-      console.error("Error updating equipment:", err);
+      // console.error("Error updating equipment:", err);
       toast.error("Failed to update equipment");
     }
   };
